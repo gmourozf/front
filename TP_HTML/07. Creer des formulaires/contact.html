@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <form action="taitement.php" method="POST">
+      <p>Remplissez ce formulaire</p>
+      <label for="nom"> Nom </label>
+      <input type="text" id="nom" maxlength="24" placeholder="votre nom" />
+      <!-- <input type="password" name="motdepasse" id="motdepasse" > -->
+      <!-- Zone de saisie multiligne -->
+      <label for="biographie">votre bio :</label>
+      <textarea name="bio" id="biographie" cols="33" rows="5"></textarea>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="votre email"
+        required
+      />
+      <label for="telephone">Telephone</label>
+      <input
+        type="phone"
+        name="telephone"
+        id="telephone"
+        placeholder="votre téléphone"
+        required
+      />
+      <label for="age">Age : </label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Votre age :"
+        required
+      />
+      <label for="siteweb">Votre site web</label>
+      <input type="url" name="siteweb" id="siteweb" placeholder="https://" />
+      <!-- champ range  -->
+      <label for="niveaujs">Votre niveau en Javascript</label>
+      <input
+        type="range"
+        id="niveaujs"
+        min="0"
+        max="4"
+        step="2"
+        placeholder="Mon niveau en Javascript"
+      />
+      <!-- champ color  -->
+      <label for="couleurfav">Votre couleur favorite</label>
+      <input type="color" id="couleurfav" name="couleurfav" />
+      <!-- champ date  -->
+      <label for="anniversaire">Votre date de naissance</label>
+      <input type="date" name="anniversaire" id="anniversaire" />
+      <!--champ de recherche  -->
+      <label for="recherche">Je cherche une langue</label>
+      <input type="search" name="recherche" id="recherche" />
+      <!-- champ de type date -->
+      <label for="rdv">choisir une heure de rdv</label>
+      <input type="time" name="rdv" id="rdv" min="09:00" max="17:00" required />
+      <small>Notre cabinet est ouvert de 9h a 17h</small>
+
+      <!-- Ajouter des options aux formulaires -->
+      <label>Quel est votre framework preféré ?</label>
+      <div class="preference">
+        <label for="react">ReactJS</label>
+        <input type="checkbox" name="react" id="react" />
+      </div>
+      <div class="preference">
+        <label for="vuejs">VueJS</label>
+        <!-- attribut selected -->
+        <input type="checkbox" name="vuejs" id="vuejs" checked />
+      </div>
+
+      <!-- Les cases d’option à choix unique : entrées radio -->
+      <label>Quel est votre framework preféré ?</label>
+      <div class="preference">
+        <label for="laravel">Laravel</label>
+        <input type="radio" name="laravel" id="laravel" value="laravel" />
+      </div>
+      <div class="preference">
+        <label for="symfony">Symfony</label>
+        <input type="radio" name="symfony" id="symfony" value="symfony" />
+      </div>
+      <div class="preference">
+        <label for="zend">Zend</label>
+        <input type="radio" name="zend" id="zend" value="zend" checked />
+      </div>
+      <!-- Les listes déroulantes à choix unique avec la balise -->
+
+      <label>Quel est votre framework preféré ?</label>
+      <select name="mybestframework" id="mybestframework">
+        <option value="react">React</option>
+        <option value="vuejs" selected>VueJS</option>
+        <option value="svelte">Svelte</option>
+      </select>
+
+      <!-- Grouper les options dans des catégories avec la balise <optgroup></optgroup> -->
+
+      <label>Quel est votre framework preféré ?</label>
+      <select name="bestframework" id="bestframework">
+        <optgroup label="framework Javascript">
+          <option value="react">React</option>
+          <option value="vuejs">VueJS</option>
+          <option value="svelte">Svelte</option>
+        </optgroup>
+      </select>
+
+      <!-- selection multiple  -->
+      <label>Quels sont vosframework préférés ?</label>
+      <select name="choixframework" id="choixframework" multiple>
+        <optgroup label="framework PHP">
+          <option value="laravel">Laravel</option>
+          <option value="symfony">Symfony</option>
+          <option value="zend">Zend</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <!-- Champs pour suggérer des valeurs prédéfinies     les datalist -->
+    <form>
+      <label for="paiement"> Je commande</label>
+      <input type="text" list="cartes" name="paiement" id="paiement" />
+    </form>
+
+      <datalist id="cartes">
+        <option value="Visa Classic">
+        <option value="Visa Premier">
+        <option value="Visa Electon">
+        <option value="Visa Infinte">
+        <option value="Mastercard">
+    </datalist>
+
+<form >
+    <label for="avatar"> choisir une photo de profil :</label>
+    <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+</form>
+   <!-- envoie de plusieurs fichiers sur le seveur -->
+<form >
+    <label for="files"> choisir une photo de profil :</label>
+    <input type="file" name="files" id="files">
+    <input type="submit" value = "envoyer le formaulaire" >
+    <button type="submit" disabled> envoyer</button>
+    <button type="submit" disabled> envoyer (desactivé)</button>
+    <button type="reset"> effacer le formulaire</button>
+</form>
+<br>
+
+<form action="action_page.php">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" autofocus>
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom">
+    <input type="submit">
+    </form>
+
+
+
+
+  </body>
+</html>

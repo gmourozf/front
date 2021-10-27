@@ -1,0 +1,15 @@
+form *{
+    display: block;
+}
+
+input[type="text"]::placeholder {
+    text-align: left;
+}
+
+input[type="textarea"]::placeholder {
+    text-align: center;
+}
+
+.preference > * {
+    display:  inline-block;
+}

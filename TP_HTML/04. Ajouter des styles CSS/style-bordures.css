@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Quickers";
+  src: url("fonts/Quickers.woff") format("woff"),
+    url("fonts/Quickers.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  color: red;
+  /* opacity: 0.9; */
+  visibility: hidden; /** cacher un element */
+  visibility: visible;
+
+  font-family: "Quickers", Arial, Helvetica, sans-serif;
+  font-size: 5em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: rgba(109, 175, 197,0.5 );
+    background-image: url("https://picsum.photos/200/300/?random") ;
+    background-repeat: no-repeat;
+    background-position: top center; */
+  /* background-blend-mode: overlay; */
+  /* background-size: cover; */
+  /* background-attachment: fixed;
+/* background: url("https://picsum.photos/200/300/?random") 100% scroll no-repeat top center; */
+  /* background-clip: content-box; */
+
+  background: url("https://picsum.photos/200/200/?random") 100% scroll no-repeat; /*, url("https://picsum.photos/1200/1200/?random") 100%
+    scroll no-repeat top right; */
+}
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  font-size: 0.7rem;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+nav {
+  text-align: center;
+  background-color: tan;
+  border: solid 2px firebrick;
+  border-radius: 2em;
+  /* box-shadow: inset 0 10px rgba(255,255,255, .3); */
+  /* box-shadow: 0 0 0 .5em black; */
+  border-radius: 50px;
+  background: linear-gradient(145deg, #db4bc2, #ff59e7);
+  box-shadow: 20px 20px 60px #cf47b8, -20px -20px 60px #ff5ff8;
+  padding: 1em;
+  margin: 1em;
+}
+
+article {
+  outline: black dashed 4px;
+}
+
+article img {
+  float: right;
+  padding: 1em;
+  width: 10em;
+  height: auto;
+  border: 3px solid silver;
+}
+
+article:first-letter /** lettrine */ {
+  float: left;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* article h3 {
+    clear:  right;
+    background-color: oldlace;
+    border: 3px solid silver;
+} */
+
+article h3:nth-of-type(1) {
+  clear: right;
+  background-color: oldlace;
+  border: 3px solid silver;
+  text-shadow: 2px -3px blueviolet;
+}
+

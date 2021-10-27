@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- utilisation d'une iframe pour afficher de la video -->
+    <h3>video</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YGLpAoosxtA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <!-- utilisation de la balise video pour affichier de la video  -->
+    <video poster="images/bird.png" preload="none" controls autoplay loop>
+      <!-- utilisation de la balise source pour  prevoir des alternatives de chargement de la video  -->
+      <source
+        src="https://www.rmp-streaming.com/media/big-buck-bunny-360p.mp4"
+        type="video/mp4"
+      />
+      <source src="https://monsite/videos/movie.ogg" type="video/ogg" />
+      vote navigateur ne prend pas en charge les video htlm5
+    </video>
+
+    <!--Placer de la musique ou des podcast -->
+
+    <h3>Podcasts</h3>
+    <figure>
+      <figcaption>Ecoutez le derniers episode</figcaption>
+      <audio  controls src="https://audio.ausha.co/BGOlau9vEwYj.mp3">votre navigateur ne prend pas en charge le html5</audio>
+      <code>audio</code>
+    </figure>
+  </body>
+</html>

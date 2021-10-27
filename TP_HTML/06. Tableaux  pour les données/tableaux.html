@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tableaux.css" />
+    <title>Tableaux</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Prénom</th>
+        <th>Nom</th>
+      </tr>
+      <tr>
+        <td>Samuel</td>
+        <td>Farinet</td>
+      </tr>
+      <tr>
+        <td>Béatrice</td>
+        <td>Béranger</td>
+      </tr>
+    </table>
+
+
+<br>
+
+
+
+    <table>
+      <caption>
+        Liste des eleves
+      </caption>
+      <thead>
+        <tr>
+          <th>nom</th>
+          <th>prenom</th>
+          <th>Maitrise de vanilla JS</th>
+          <th>Maitrise ES6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Samuel</td>
+          <td>Farinet</td>
+          <td rowspan="2">oui</td>
+          <td rowspan="2">non</td>
+        </tr>
+        <tr>
+          <td>Béatrice</td>
+          <td>Beranger</td>
+          <!-- <td colspan="2">oui</td> -->
+          
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Nombre d'eleves</th>
+          <td colspan="3">2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br>
+
+    <table>
+        <caption> température moyenne mensulelle des 3 plus grandes ville de France</caption>
+        <tr>;
+            <td>&nbsp</td>
+            <th scope="col">Paris</th>
+            <th scope="col">Marseille</th>
+            <th scope="col">Lyon</th>
+
+        </tr>
+        <tr >
+            <th scope="row">Juin</th>
+            <td>22°C</td>
+            <td>28°C</td>
+            <td>26°C</td>
+
+        </tr>
+        <tr >
+            <th scope="row">Juillet</th>
+            <td>24°C</td>
+            <td>20°C</td>
+            <td>28°C</td>
+
+        </tr>
+
+
+
+    </table>
+
+    <!-- https://tabletag.net/fr/ 
+    -->
+    <!-- https://www.w3schools.com/tags/att_td_rowspan.asp -->
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <th colspan="3">01</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>02</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>02</td>
+          <td rowspan="2">03</td>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>02</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

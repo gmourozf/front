@@ -1,0 +1,40 @@
+h2{
+    font-size: 2em;
+    text-decoration: crimson;
+    width:  10em;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: auto ;
+    margin-right: auto;
+    text-transform: capitalize;
+   
+
+}
+
+h2::before { 
+
+content: ' - ';
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 2em;
+
+}
+h3::before {
+    content: '\232A \00a0' ;  /**  tiret  long cadratin */
+    color :crimson;
+}
+
+h3::after {
+
+    content: '\00a0 \2329';
+    color:crimson;
+
+}
+
+article a::before {
+    content: url(images/red-deer-rebels.svg);
+    zoom : 5%;
+}

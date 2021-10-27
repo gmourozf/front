@@ -1,0 +1,24 @@
+td {
+    border: 1px solid darkgray;
+    padding: 0.4em;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #bde9ba;
+    caption-side: bottom;
+}
+  
+th {
+    text-align: left;
+    padding: 0.4em;
+}
+
+th, td {
+    text-align: center;
+    padding: 0.4em;
+    border: 1px solid black;
+}

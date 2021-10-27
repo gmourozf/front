@@ -1,0 +1,24 @@
+.container { 
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container div {
+    width:  200px;
+    height: 200px;
+    color : darkgray;
+    text-align: center;
+    /* display : inligne; */
+    display: inline-block;
+    
+    /*display:  table-cell; */
+    border: 10px solid white;
+    vertical-align:  middle;  /*comportement visuel de cellule avec table-cell */
+    margin: 1em;/*margin ne fonctionne pas avec un display table-cell*/
+}
+
+.container article{
+
+    display: inline-block;
+}
