@@ -67,10 +67,19 @@
       display:none;
       /* display: inline-flex; */
   }
+  .logo{
+      font-size: 2rem;
+  }
 
 .hamburger{
     width: 10px;
-    height:50px;
+    height:25px;
+    position: absolute;
+          top :3rem;
+          right: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
    
 }
 
@@ -197,8 +206,7 @@
       nav div{
         float:left;
         min-width:20vw;
-        font-size: 1rem;
-        background-image: url("/nushicafe/icons/free-hamburger-icon-5.jpg");
+        font-size: 1rem;       
          
 
       }
@@ -215,12 +223,7 @@
           text-transform: uppercase; */
 
       }
-      .hamburger {
-         display:none;
-      }
-      .menu-main{
-        display:inline-flex;
-    }
+
 
 
   }
@@ -230,7 +233,12 @@
     .menu-main{
         display:inline-flex;
     }
-
     
+
+          .hamburger {
+          
+         display:none;
+      }
+      
   }
   
