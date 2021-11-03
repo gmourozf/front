@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+aside,
+main,
+header,
+footer {
+  padding: 0.4em;
+  border: 1px solid grey;
+}
+
+header {
+  background-color: lightyellow;
+  height: 20vh;
+}
+
+main {
+  background-color: lightsalmon;
+  flex-grow: 1;
+}
+
+article {
+  background-color: lightsteelblue;
+}
+
+aside {
+  background-color: lightgreen;
+}
+
+footer {
+  background-color: lightcyan;
+  height: 20vh;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+
+  aside {
+    /* dans ce cas  c'est le flexbasis qui est pris car flex-grow et flex-shrink gèrent pas les % */ 
+    flex: 0 0 200px;
+    order:1;
+  }
+
+  article {
+    flex-grow: 2;
+    order:2;
+  }
+}
