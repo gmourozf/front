@@ -1,0 +1,95 @@
+/**feuille de style de Georges MOUROZ le 10/11/2021  exercice sur les flexbox  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/*partie mobile first */
+body {
+    display: flex;
+     justify-content: center; 
+    background-color: palegreen;
+}
+
+.container{
+display:flex;
+flex-direction: column;
+background-color:orange;
+/* max-width: 60vw; */
+min-width:70vw 
+}
+
+
+header {
+    background-color:  paleturquoise;
+    margin:20px;
+    padding :1em;
+}
+
+nav {
+    background-color: gray;
+    margin-bottom: 1rem;
+}
+
+main{
+    /* margin: 0 20px 0 20px;*/
+    background-color:  paleturquoise;
+    margin:20px;
+    padding :1em;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+section {
+    background-color: gray;
+    margin-bottom:5px ;
+   flex: 2;
+}
+
+aside {
+    background-color: gray;    
+    flex: 1;
+}
+
+footer{
+    background-color: paleturquoise;;
+    margin:20px;
+    padding :1em;
+    height: 2em;
+    display: flex;    
+    align-items: center;
+}
+/*au dessus de 900px  l'affichage change la partie aside se met a coté de la section pour un affichage navigateur   */
+@media screen and (min-width:900px) {
+
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        background-color:orange;        
+        }
+
+    main{
+        
+        background-color:  paleturquoise;
+        margin:20px;
+        padding :1em;
+        display: flex;
+        flex-direction: row;
+        
+       
+    }
+    section {
+        background-color: gray;        
+        margin-right:5px ;
+        margin-bottom:0 ;
+       flex: 9;
+    }
+    
+    aside {
+        background-color: gray;        
+        flex: 1;
+    }
+}

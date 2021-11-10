@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* @font-face {
+    font-family: 'Quickers';
+    src: url(./font/Quickers.otf) format('otf')
+    url(./font/Quickers.ttf) format('truetype');
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+  float: left;
+  width: 33px;
+  height: 33px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+.home-text {
+  font-family: "Satisfy";
+  font-weight: 800;
+  font-size: 1.4em;
+  color: white;
+  padding: 10px;
+}
+
+ul {
+  display: inline-flex;
+  min-width: 50vw;
+  /* width: 70%;
+  flex-grow: 3; */
+  justify-content: flex-end; 
+  list-style: none;
+ 
+}
+li {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: orange;
+}
