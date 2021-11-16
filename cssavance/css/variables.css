@@ -1,0 +1,42 @@
+:root {
+    --couleur-primaire: red;
+    --couleur-secondaire: green;
+    --couleur-tertiaire: blue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--couleur-tertiaire);
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    background-color: beige;
+}
+
+.primaire {
+    color: var(--couleur-primaire);
+}
+
+.secondaire {
+    color: var(--couleur-secondaire);
+}
+
+.tertiaire {
+    color: var(--couleur-tertiaire);
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--couleur-tertiaire);
+    color: white;
+}
