@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62, 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('https://res.cloudinary.com/citywizz/image/upload/v1635181946/jump-motocross_gylugk.jpg') no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: grid;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+main {
+    width: calc(100vw - 10rem);
+    padding: 4rem;
+    background-color: rgba(205, 92, 92, 0.383);
+    line-height: 3rem;
+    color: white;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.box {
+    display: block;
+    width: calc(100% - 6rem);
+    height: calc(100% - 6rem);
+    background-color: rgba(0, 225, 0, 0.089);
+    position: absolute;
+    z-index: 10;
+}
+
+.item {
+    width: 5rem;
+    height: 5rem;
+    background-color: lightslategray;
+    position: relative;
+}
+
+.item-center-h {
+    background-color: red;
+    left: calc(((100% - 6rem) / 2) + 2.5rem);
+}
+
+.item-center-v {
+    background-color: pink;
+    top: calc(((100% - 6rem) / 2) - 2.5rem);
+}
+
+.item-center-vh {
+    background-color: brown;
+    left: calc(((100% - 6rem) / 2) + 2.5rem);
+    top: calc(((100% - 6rem) / 2) - 8rem);
+    /* bottom: calc(((100% - 8rem) / 2) - 4rem); */
+}
