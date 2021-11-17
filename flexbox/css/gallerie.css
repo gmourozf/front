@@ -26,6 +26,7 @@ body {
     /* display: inline-block; */
     /* height: 400px; */
     width: 410px;
+    overflow: hidden;
     margin-bottom: 4rem;
     /* width: 450px; */
     /* -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(3, 135, 36, 0); */
@@ -51,6 +52,12 @@ body {
 .card-4 {
     order: 4;
     /* flex-grow: 1; */
+}
+/*  rend une image responsive*/
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .titre-produit {
