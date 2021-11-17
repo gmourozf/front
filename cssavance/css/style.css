@@ -34,8 +34,8 @@ h1 {
 
 .box {
     display: block;
-    width: calc(100% - 6rem);
-    height: calc(100% - 6rem);
+    width: calc(100% - 8rem);
+    height: calc(100% - 8rem);
     background-color: rgba(0, 225, 0, 0.089);
     position: absolute;
     z-index: 10;
@@ -49,18 +49,27 @@ h1 {
 }
 
 .item-center-h {
+    display:block;
+    position: absolute;
     background-color: red;
-    left: calc(((100% - 6rem) / 2) + 2.5rem);
+    left: calc(((100% - 8rem) / 2) + 2.5rem);
+    z-index:20;
 }
 
 .item-center-v {
     background-color: pink;
-    top: calc(((100% - 6rem) / 2) - 2.5rem);
+    top: calc(((100% - 8rem) / 2) + 1.75rem);
+    display:block;
+    position: absolute;
+    z-index:30;
 }
 
 .item-center-vh {
     background-color: brown;
-    left: calc(((100% - 6rem) / 2) + 2.5rem);
-    top: calc(((100% - 6rem) / 2) - 8rem);
-    /* bottom: calc(((100% - 8rem) / 2) - 4rem); */
+
+    left: calc(((100% - 8rem) / 2) + 2.5rem);
+    top: calc(((100% - 8rem) / 2) + 1.75rem);
+    display:block;
+    z-index:40;
+    position: absolute;
 }
