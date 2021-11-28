@@ -1,0 +1,18 @@
+$font-stack: Helvetica,
+sans-serif;
+$color-gray19: #303030;
+$color-gray20: #333;
+$primary-color: $color-gray20;
+$primary-color__dark: darken($primary-color, 35%) !default;
+// #000
+$primary-color__darker: darken($primary-color, 13.5%) !default; // #111
+$primary-color__lighter: lighten($primary-color, 29%) !default; // #7d7d7d
+$primary-color__light: lighten($primary-color, 45%) !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
+$linkcolor: crimson;
+$bg-pink: pink;
+$bg-orange: orange;
+$bg-orangered: orangered;
+$color-yellow:yellow;
+$color-green: green;

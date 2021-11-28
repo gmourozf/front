@@ -1,0 +1,66 @@
+                 @import 'variables';
+                 @import 'pages/header';
+                 /*    * {
+                   margin: 0;
+                   padding: 0;
+                   box-sizing: border-box;
+                }*/
+                 
+                 // definition d'un placeholder dont heriteront  les colonnes
+                 %equal-height {
+                     display: flex;
+                     flex-wrap: wrap;
+                 }
+                 
+                 body {
+                     display: grid;
+                     grid-template-columns: 1fr;
+                     grid-template-rows: 1fr, 3fr, 1fr;
+                     grid-template-areas: "header" "main" "footer";
+                     height: 100vh;
+                 }
+                 
+                 // imbrication de selecteur
+                 main {
+                     background-color: $bg-orange;
+                     grid-area: "main";
+                     //equivaut à  main article 
+                     article {
+                         color: $color-yellow;
+                         //concatenation d'une règle  equivaut à  article:hover
+                         &:hover {
+                             color: $color-green;
+                             text-decoration: underline;
+                         }
+                     }
+                 }
+                 
+                 .col-container {
+                     @extend %equal-height;
+                     width: 100%;
+                 }
+                 
+                 .col {
+                     flex: 1;
+                     padding: 1em;
+                     &:nth-child(1) {
+                         background-color: pink;
+                     }
+                 }
+                 /* col:nth-child(1) {
+                     background-color: pink;
+                 } */
+                 
+                 .col:nth-child(2) {
+                     background-color: $bg-orangered;
+                 }
+                 
+                 .col:nth-child(3) {
+                     background-color: $bg-pink;
+                 }
+                 
+                 footer {
+                     color: $color-white;
+                     background-color: $bg-orangered;
+                     grid-area: "footer";
+                 }
