@@ -1,0 +1,6 @@
+@import '../variables';
+header {
+    grid-area: header;
+    color: $color-white;
+    background-color: $bg-orangered;
+}
