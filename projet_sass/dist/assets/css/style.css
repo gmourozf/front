@@ -1,7 +1,53 @@
+@charset "UTF-8";
 header {
   grid-area: header;
-  color: #fff;
-  background-color: orangered;
+}
+
+#logo, #slogan {
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+/**
+  gerer le display flex et la répartition de l'espace entre les div
+  utiliser l'heritage de la règle pour les    
+*/
+.alert {
+  display: flex;
+  width: 10vw;
+  height: 10vh;
+  border-radius: 5px;
+  border: solid white;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orange;
+  height: 15vh;
+}
+
+.alert-success {
+  background-color: green;
+}
+
+.alert-danger {
+  background-color: crimson;
+}
+
+.alert-default {
+  background-color: #333;
+}
+
+.alert-warning {
+  background-color: yellow;
 }
 
 /*    * {

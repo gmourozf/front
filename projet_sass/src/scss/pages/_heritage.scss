@@ -1,0 +1,51 @@
+/**
+  gerer le display flex et la répartition de l'espace entre les div
+  utiliser l'heritage de la règle pour les    
+*/
+@import '../variables';
+
+%square-shape{
+  display:flex;
+  width: 10vw ;
+  height: 10vh;
+  border-radius: 5px;
+  border: solid white;
+  text-align: center;
+  color:white;
+  justify-content: center;
+  align-items: center;
+    
+
+}
+
+.alerts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:orange;
+  height: 15vh;
+ 
+    
+}
+
+.alert{
+  @extend %square-shape;
+  
+}
+
+.alert-success{
+ background-color: $color-green;
+}
+
+.alert-danger {
+  background-color: $color-red;
+
+}
+.alert-default{
+
+  background-color: $color-gray20;
+}
+
+.alert-warning{
+ background-color: $color-yellow;
+}

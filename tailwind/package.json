@@ -1,0 +1,23 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "tailwindcss build -i src/style-input.css -o dist/assets/css/style.css",
+    "watch:tailwind": "tailwind build -i src/style-input.css -o dist/assets/css/style.css --watch",
+    "production:tailwind": " NODE_ENV=production tailwind build -i src/style-input.css -o dist/assets/css/style.css "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^2.2.19",
+    "win-node-env": "^0.5.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
+  }
+}
