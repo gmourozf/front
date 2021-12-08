@@ -2,7 +2,7 @@
   gerer le display flex et la répartition de l'espace entre les div
   utiliser l'heritage de la règle pour les    
 */
-@import '../variables';
+@use '../utils/variables' as *;
 
 %square-shape{
   display:flex;

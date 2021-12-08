@@ -1,13 +1,21 @@
-                 @import 'variables';
-                 @import 'pages/header';
-                 @import 'pages/heritage';
+                //  @import 'variables';
+                //  @import 'pages/header';
+                //  @import 'pages/heritage';
+                
+
+                @use './utils/variables'as *;
+                @use './pages/header';
+                @use './pages/heritage';
+                @use './utils/mixins' as *;
+                @use 'sass:math';
+                @use "sass:selector";
                  /*    * {
                    margin: 0;
                    padding: 0;
                    box-sizing: border-box;
                 }*/
                  
-                 // definition d'un placeholder dont heriteront  les colonnes
+                // definition d'un placeholder dont heriteront  les colonnes
                  %equal-height {
                      display: flex;
                      flex-wrap: wrap;
@@ -64,6 +72,7 @@
                      color: $color-white;
                      background-color: $bg-orangered;
                      grid-area: "footer";
+                     @include border-radius(30px);
                  }
 
                

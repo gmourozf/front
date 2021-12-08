@@ -1,0 +1,18 @@
+@mixin logo-slogan {
+    padding:1em;
+      margin: 0 auto;
+      text-align:center;
+      font-size:2em;
+  
+  } 
+  @mixin border-radius($degre){
+    border: solid 1px black;
+    border-radius: $degre;
+  }
+  @mixin googleFonts ($font){
+    // @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");    
+    @import url('https://fonts.googleapis.com/css2?family=#{$font}&display=swap');
+
+    font-family: '#{$font}', sans-serif ;
+
+  }

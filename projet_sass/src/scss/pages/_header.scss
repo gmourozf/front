@@ -1,17 +1,37 @@
-@import '../variables';
+// @import '../variables';
+@use  '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
 header {
     grid-area: header;
-    //color: $color-white;
-    // background-color: $bg-orangered;
+    color: $color-white;
+    background-color: $bg-orangered;
 }
 
+
+%alert{
+  padding:1.2em;
+  border: 2px solid #CCC;
+  color: white;
+  -moz-border-radius:1em;
+  -webkit-border-radius:1em;
+  -ms-border-radius:1em;
+  border-radius:1em;
+  }
+ 
+
 #logo{
-    padding:1em;
-    margin: 0 auto;
-    text-align:center;
-    font-size:2em;
+    @include logo-slogan();
+    @include border-radius(5px);
+    @include googleFonts(Roboto);
 }
 
 #slogan{
-  @extend #logo
+  @include logo-slogan();
+  @include border-radius(10px);
     }
+
+.alert-success{
+@extend %alert;
+  background-color: $color-green;
+} 
