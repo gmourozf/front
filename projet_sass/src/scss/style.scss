@@ -1,6 +1,9 @@
                 //  @import 'variables';
                 //  @import 'pages/header';
                 //  @import 'pages/heritage';
+
+               
+
                 
 
                 @use './utils/variables'as *;
@@ -9,6 +12,8 @@
                 @use './utils/mixins' as *;
                 @use 'sass:math';
                 @use "sass:selector";
+                @use './components/lists' as *;
+                @use './utils/functions' as *;
                  /*    * {
                    margin: 0;
                    padding: 0;
@@ -27,6 +32,9 @@
                      grid-template-rows: 1fr, 3fr, 1fr;
                      grid-template-areas: "header" "main" "footer";
                      height: 100vh;
+                     color: $primary-color__darker;
+                     background-color: $bg-pink;
+                     font-size: maFonction(40,2)+rem;
                  }
                  
                  // imbrication de selecteur
@@ -67,12 +75,53 @@
                  .col:nth-child(3) {
                      background-color: $bg-pink;
                  }
+                 $percent:0;
+                 .col-6 {
+                    $percent: column-percent(6);
+                    @debug 'la taile est  #{$percent}';
+                    width: $percent;
+                 }
+                 $size : 50vw;
+                 aside{
+                     $width: math.div($size,100vw) * 100%;
+                     @debug "the width is #{$width}";
+                     margin:  3em;
+                     padding: 1em;
+                     background-color: scale-color($primary-color, $lightness: 60%, );
+                     width: $width;
+
+                 }
+
+                 aside::before {
+                     content: open-quote;
+                 }
+                 aside::after{
+                     content: close-quote;
+                 }
+                 $result:0;
+                 h3{
+                     $result: pix2rem(24px );
+                     @debug 'fonction pix2rem #{$result}';
+                     font-size: #{$result};
+
+                 }
+
+
+
+
                  
                  footer {
                      color: $color-white;
                      background-color: $bg-orangered;
                      grid-area: "footer";
                      @include border-radius(30px);
+                 }
+                 
+                 footer::before{
+
+                    //on selectionne le deuxième element de la liste contenue dans la variable list
+                    //!!! Attention ce n’est pas ici l’index d’un tableau. Nous comptons à partir de 1.  
+                     content: nth($list-books, 7) ;
                  }
 
                

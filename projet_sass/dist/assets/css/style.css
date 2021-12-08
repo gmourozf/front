@@ -1,8 +1,10 @@
 @charset "UTF-8";
+/* variables .scss*/
 header {
   grid-area: header;
   color: #fff;
   background-color: orangered;
+  border: 4px dotted goldenrod;
 }
 
 .alert-success {
@@ -95,6 +97,9 @@ body {
   grid-template-rows: 1fr, 3fr, 1fr;
   grid-template-areas: "header" "main" "footer";
   height: 100vh;
+  color: #111111;
+  background-color: pink;
+  font-size: 2rem;
 }
 
 main {
@@ -132,12 +137,39 @@ main article:hover {
   background-color: pink;
 }
 
+.col-6 {
+  width: 50%;
+}
+
+aside {
+  margin: 3em;
+  padding: 1em;
+  background-color: #adadad;
+  width: 50%;
+}
+
+aside::before {
+  content: open-quote;
+}
+
+aside::after {
+  content: close-quote;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 footer {
   color: #fff;
   background-color: orangered;
   grid-area: "footer";
   border: solid 1px black;
   border-radius: 30px;
+}
+
+footer::before {
+  content: "beaulivre";
 }
 
 /*# sourceMappingURL=style.css.map */

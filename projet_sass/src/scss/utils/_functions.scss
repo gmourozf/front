@@ -1,0 +1,31 @@
+@use "sass:math";
+
+@function sum($arg1,$arg2){
+    @return  $arg1 + $arg2;
+
+}
+
+@function maFonction($nombreA,$nombreB){
+    @return $nombreA * math.div($nombreB, $nombreA);
+}
+
+//cette fonction double la valeur saisie entrée
+
+@function doubler ($border-value){
+    @return 2 * $border-value;
+}
+
+//exo 2 fonctions
+
+$col-count: 12;
+
+@function column-percent($nbCol ){
+@return  percentage(math.div( math.div( 100, $col-count) , 100)*$nbCol);
+
+}
+//exo3 convertir des pixel en rem   ici 1rem = 16px
+$unit:'rem';
+@function pix2rem($pixValue, $baseRem: 16px){
+   // @return math.div($pixValue, $baseRem)rem;
+    @return calc($pixValue / $baseRem)+$unit;
+}

@@ -1,11 +1,16 @@
 // @import '../variables';
 @use  '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use  '../utils/functions' as *;
 
+$border-width: 2px;
 header {
     grid-area: header;
     color: $color-white;
     background-color: $bg-orangered;
+   
+    border :  doubler($border-width)  dotted goldenrod;
+
 }
 
 
