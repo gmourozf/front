@@ -1,4 +1,4 @@
 $list-books:  "roman", "poesie", "piece-theatre", "bd", "recette", "manuel";
 
 //fonction d'ajout dans une liste  il faut indiquer le séparateur
-$list-books : append($list-books,'beaulivre', comma )
+$list-books : append($list-books,'beaulivre', comma );

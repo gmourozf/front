@@ -81,6 +81,22 @@ header {
   background-color: yellow;
 }
 
+.color-green {
+  color: green;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-brown {
+  color: brown;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
 /*    * {
    margin: 0;
    padding: 0;
@@ -160,9 +176,29 @@ h3 {
   font-size: 1.5rem;
 }
 
+.p-1 {
+  padding-left: 1em;
+}
+
+.p-2 {
+  padding-left: 2em;
+}
+
+.p-3 {
+  padding-left: 3em;
+}
+
+.p-4 {
+  padding-left: 4em;
+}
+
+.p-5 {
+  padding-left: 5em;
+}
+
 footer {
-  color: #fff;
-  background-color: orangered;
+  background-color: #121212;
+  color: white;
   grid-area: "footer";
   border: solid 1px black;
   border-radius: 30px;

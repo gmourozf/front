@@ -1,0 +1,40 @@
+$theme:"dark";
+@mixin theme($theme) {
+  @if ($theme == "dark") {
+    background-color: #121212;
+    color: white;
+  } @else if ($theme == "pastel") {
+    background-color: #dee2ff;
+    color: #333;
+  } @else {
+    background-color: #bee1e6;
+    color: #000;
+  }
+};
+ // premiere methode pour créée  des class pour gerrer des les couleurs
+// $color-map : ('vert': green , 'bleu': blue, 'marron' : brown , 'jaune' : yellow, 'rouge':red);
+
+// @each $keys,$value in $color-map {
+
+//     .#{$keys} {
+//         color: #{$value};
+//     }
+
+  
+//};
+
+// deuxieme methode pour generer des class qui gèrent des couleurs 
+$color-map2 : ('color-green':('color': green) ,'color-blue':('color': blue), 'color-brown': ('color' : brown) , 'color-yellow': ('color' : yellow),'color-red' : ('col':red));
+@each $keys, $value in $color-map2 {  
+
+        .#{$keys} {
+           
+            color: #{(map-get($value, 'color' ))};
+            
+
+        }
+    
+    
+     
+};
+

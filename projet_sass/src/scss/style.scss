@@ -10,6 +10,7 @@
                 @use './pages/header';
                 @use './pages/heritage';
                 @use './utils/mixins' as *;
+                @use './utils/themes' as *;
                 @use 'sass:math';
                 @use "sass:selector";
                 @use './components/lists' as *;
@@ -75,12 +76,14 @@
                  .col:nth-child(3) {
                      background-color: $bg-pink;
                  }
+
                  $percent:0;
                  .col-6 {
                     $percent: column-percent(6);
                     @debug 'la taile est  #{$percent}';
                     width: $percent;
                  }
+
                  $size : 50vw;
                  aside{
                      $width: math.div($size,100vw) * 100%;
@@ -95,9 +98,11 @@
                  aside::before {
                      content: open-quote;
                  }
+
                  aside::after{
                      content: close-quote;
                  }
+
                  $result:0;
                  h3{
                      $result: pix2rem(24px );
@@ -106,15 +111,30 @@
 
                  }
 
+                 //utilisation d'une boucle @for pour génerer 4 classe a utiliser pour des paragraphes 
+
+                 @for $i from 1 through 5 {
+                     .p-#{$i} {
+                        padding-left :$i* 1em;
+                      }
+                 }
+
+                 //utilisation d'une boucle @each 
+
+
+                
+
 
 
 
                  
                  footer {
-                     color: $color-white;
-                     background-color: $bg-orangered;
+                    //  color: $color-white;
+                    //  background-color: $bg-orangered;
+                    @include theme($theme);
                      grid-area: "footer";
                      @include border-radius(30px);
+                     
                  }
                  
                  footer::before{
