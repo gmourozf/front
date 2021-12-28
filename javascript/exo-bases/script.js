@@ -1,9 +1,10 @@
 var express = require('express')
 
-console.log("hello");
-console.log("bonjour");
-
-let Prenom = "Marceline";
+let nb1 = 0;
+nb1 = 12 * 5;
+nb1 = 20 * 5;
+nb1 = 2 ** 3;
+"Marceline";
 let nom = "Des jkljiuo";
 let auteur = Prenom + nom;
 console.log(auteur);
@@ -33,3 +34,30 @@ const lover1 = `Roméo`;
 const lover2 = `Juliette`;
 let loving = lover1.concat(' & ', lover2);
 console.log(loving);
+
+console.log(`c'est sur plusieurs
+ligne ${lover1}`);
+
+
+//conversion de type
+
+const nombre = 10;
+const nombreChaine = "10";
+console.log(`la variable chiffre est de type ` + typeof(nombre) + ' et a pour valeur ' + nombre);
+console.log(`la variable chiffre est de type ` + typeof(nombreChaine) + ' et a pour valeur ' + nombreChaine);
+
+//convertion de type avec  les fonction string number boolean
+
+const nombre1 = 12;
+const nombreChaine1 = String(nombre1);
+console.log('La variable chiffre est de type ' + typeof(nombreChaine1) + ' et a pour valeur ' + nombreChaine1);
+
+const cent = "100";
+const centEnChiffre = Number(cent);
+console.log('la variable chiffe est de type ' + typeof(centEnChiffre) + 'et a pour valeur ' + centEnChiffre);
+
+console.log(Boolean('ttte'));
+console.log(Boolean(0));
+
+const salutation = 'bonjour';
+console.log(salutation.length);
