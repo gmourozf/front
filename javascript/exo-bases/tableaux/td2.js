@@ -3,6 +3,7 @@ let pays = [
     ['Asuncion', 'Brasília', 'Buenos Aires', 'Paramaribo']
 ]
 
+//supression  d'Argentine et de 'Buenos Aires'
 pays[0].splice(2, 1);
 pays[1].splice(2, 1);
 
