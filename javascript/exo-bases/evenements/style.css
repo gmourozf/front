@@ -1,0 +1,18 @@
+.cercle {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: lightskyblue;
+    transition: background-color 0.4s ease;
+    }
+    .carre {
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    background: lightcoral;
+    transition: background-color 0.4s ease;
+    }
+
+    input{
+        display: block;
+    }
